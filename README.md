@@ -13,7 +13,7 @@ With the motivation is explore applications of Deep Learning in Computer Vision,
 ### Overview
 Based on the research by [Iizuka and Simo-Serra *et al*. (2016)] and  [Baldassarre, Gonzales-Moren and Rodes-Guirao (2017)], we decided to reimplement their proposed approach with some minor modification. The architecture uses Convolutional Neural Networks with Autoencoders concept and combined it with a pre-trained network (Inception-ResNet-v2) which provide high-level features to assist the colorization process.
 
-![](assets/net_architecture.png)
+![](assets/net_architecture.PNG)
 
 The network has four main components, which are encoder, decoder, feature extractor and fusion. Encoder component extracts the mid-level features of the images where the feature extractor component using Inception-RestNet-v2 extracts the high-level features. These features are merged in the fusion component. The decoder consumes these embedded features to predict the a* and b* components and produce the colorized images.
 
